@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Efe Özaslan kişisel portfolyo sitesi — Yazılım Geliştirici">
+  <meta name="author" content="Efe Özaslan">
+  <title>Efe Özaslan — Yazılım Geliştirici</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Bricolage+Grotesque:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo">Efe <span>Özaslan</span></a>
+  <div class="nav-right">
+    <!-- Masaüstü nav linkleri -->
+    <div class="nav-links">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="pages/about.html">Hakkında</a>
+      <a href="pages/projeler.html">Projeler</a>
+      <a href="pages/contact.html">İletişim</a>
+    </div>
+    <!-- ETKİLEŞİM 3: Tema değiştirici butonu -->
+    <button id="theme-toggle" title="Tema değiştir">🌙</button>
+    <!-- ETKİLEŞİM 1: Hamburger butonu (mobilde görünür) -->
+    <button class="hamburger" aria-label="Menüyü aç/kapat" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobil menü -->
+<div class="mobile-menu">
+  <a href="index.html">Ana Sayfa</a>
+  <a href="pages/about.html">Hakkında</a>
+  <a href="pages/projeler.html">Projeler</a>
+  <a href="pages/contact.html">İletişim</a>
+</div>
+
+<!-- ETKİLEŞİM 2: Yukarı çık butonu (scroll 300px sonrası belirir) -->
+<button id="back-to-top" title="Başa dön">↑</button>
+
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title">Merhaba, ben<br><span>Efe Özaslan</span></h1>
+      <!-- ETKİLEŞİM 4: Typewriter efekti — JS tarafından doldurulur -->
+      <div class="hero-typewriter" id="typewriter"></div>
+      <p class="hero-desc">Bilgisayar programcılığı öğrencisiyim. Java, PHP ve JavaScript ile projeler geliştiriyorum.</p>
+      <div class="hero-actions">
+        <a href="pages/projeler.html" class="btn btn-primary">Projelerimi Gör</a>
+        <a href="pages/contact.html" class="btn btn-secondary">İletişime Geç</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-val">1+</div><div class="stat-label">Yıl Deneyim</div></div>
+        <div><div class="stat-val">1</div><div class="stat-label">Tamamlanan Proje</div></div>
+        <div><div class="stat-val">5+</div><div class="stat-label">Teknoloji</div></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- HAKKINDA ÖNİZLEME -->
+  <section style="background: var(--bg2);">
+    <div class="container">
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="about-avatar">EÖ</div>
+        </div>
+        <div>
+          <div class="section-tag reveal">Hakkımda</div>
+          <h2 class="section-title reveal d1">Kod yazmayı seven bir öğrenciyim.</h2>
+          <p class="section-desc reveal d2">Ders projelerinin dışına çıkarak kendi fikirlerimi hayata geçirmeye çalışıyorum. Java ile plugin geliştirme, PHP ve JavaScript ile web uygulamaları üzerine çalışıyorum.</p>
+          <a href="pages/about.html" class="btn btn-secondary reveal d2">Daha Fazla Bilgi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- PROJE ÖNİZLEME -->
+  <section>
+    <div class="container">
+      <div class="section-tag reveal">Projeler</div>
+      <h2 class="section-title reveal d1">Öne Çıkan Çalışma</h2>
+      <div class="projects-list" style="margin-top: 32px;">
+        <a href="https://github.com/efeozaslan/portfolyo" target="_blank" class="project-card reveal">
+          <div class="project-icon">🌐</div>
+          <div class="project-info">
+            <div class="project-name">Portfolyo Sitesi</div>
+            <div class="project-desc">Saf HTML, CSS ve JavaScript ile geliştirilmiş kişisel portfolyo sitesi. Responsive tasarım, hamburger menü ve scroll animasyonları içeriyor.</div>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Responsive</span>
+            </div>
+          </div>
+          <span class="project-arrow">→</span>
+        </a>
+      </div>
+      <div style="margin-top: 24px;" class="reveal">
+        <a href="pages/projeler.html" class="btn btn-secondary">Tüm Projeleri Gör</a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- CTA -->
+  <section style="background: var(--bg2); text-align: center;">
+    <div class="container">
+      <h2 class="section-title reveal" style="margin-bottom: 12px;">Birlikte çalışalım.</h2>
+      <p class="section-desc reveal d1" style="margin: 0 auto 28px; max-width: 420px;">Proje iş birlikleri veya herhangi bir konu için bana ulaşabilirsin.</p>
+      <a href="pages/contact.html" class="btn btn-primary reveal d2">İletişime Geç</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span class="footer-text">© 2026 Efe Özaslan</span>
+  <a class="footer-up">↑ Başa Dön</a>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

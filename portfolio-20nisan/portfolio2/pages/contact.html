@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Efe Özaslan ile iletişime geçin">
+  <meta name="author" content="Efe Özaslan">
+  <title>İletişim — Efe Özaslan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Bricolage+Grotesque:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="logo">Efe <span>Özaslan</span></a>
+  <div class="nav-right">
+    <div class="nav-links">
+      <a href="../index.html">Ana Sayfa</a>
+      <a href="about.html">Hakkında</a>
+      <a href="projeler.html">Projeler</a>
+      <a href="contact.html">İletişim</a>
+    </div>
+    <button id="theme-toggle" title="Tema değiştir">🌙</button>
+    <button class="hamburger" aria-label="Menüyü aç/kapat" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <a href="../index.html">Ana Sayfa</a>
+  <a href="about.html">Hakkında</a>
+  <a href="projeler.html">Projeler</a>
+  <a href="contact.html">İletişim</a>
+</div>
+
+<button id="back-to-top" title="Başa dön">↑</button>
+
+<main>
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-tag">İletişim</div>
+      <h1>Benimle İletişime Geç</h1>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+
+      <!-- Haftalık Rapor Formu -->
+      <div class="rapor-banner reveal">
+        <p>📋 Haftalık ders raporu formunu doldurmayı unutma!</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_se_8hnsDZBhI5-ZsBk0t7NyDASsf4xnW3hzOH-ecFBQ3CA/viewform"
+           target="_blank" class="btn btn-primary" style="white-space:nowrap;">
+          Formu Doldur →
+        </a>
+      </div>
+
+      <div class="contact-grid">
+        <div class="reveal">
+          <p class="section-desc">Proje iş birlikleri veya herhangi bir konu için bana ulaşabilirsin.</p>
+          <div class="contact-links">
+            <a href="mailto:efeozaslan@example.com" class="contact-link">
+              <div class="contact-link-icon">✉</div>
+              <span class="contact-link-text">efeozaslan@example.com</span>
+            </a>
+            <a href="https://github.com/efeozaslan" target="_blank" class="contact-link">
+              <div class="contact-link-icon" style="font-size:1rem;">⌥</div>
+              <span class="contact-link-text">github.com/efeozaslan</span>
+            </a>
+            <a href="https://linkedin.com/in/efeozaslan" target="_blank" class="contact-link">
+              <div class="contact-link-icon">in</div>
+              <span class="contact-link-text">linkedin.com/in/efeozaslan</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal d2">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Adınız</label>
+              <input id="name" type="text" placeholder="Adınız Soyadınız" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-posta</label>
+              <input id="email" type="email" placeholder="ornek@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Mesaj</label>
+              <textarea id="message" placeholder="Merhaba..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Mesaj Gönder</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="footer-text">© 2026 Efe Özaslan</span>
+  <a class="footer-up">↑ Başa Dön</a>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
